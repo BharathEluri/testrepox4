@@ -46,10 +46,10 @@ sql.dd(new DDStatement().name("SYSCIN").dsn("&&SYSCIN").options('cyl space(5,5) 
 def sqlrc = sql.execute()
 
 if (sqlrc > 4)
-	println("Pre Compile failed!  RC=$rc")
+	println("Pre Compile failed!  RC=$sqlrc")
 else
 {
-	println("Pre Compile successful!  RC=$rc")
+	println("Pre Compile successful!  RC=$sqlrc")
 	//	def sqlcopy = new MVSExec().pgm("XXXX").parm("${props.xx}")
 	//	sqlcopy.dd(new DDStatement().name("SYSIN").options("DUMMY")
 	//	sqlcopy.dd(new DDStatement().name("SYSUT1").dsn("&&SYSCIN")
