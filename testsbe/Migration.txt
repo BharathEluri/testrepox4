@@ -1,0 +1,18 @@
+JCL to Groovy
+
+1. EXEC PGM=  ,PARM=
+   MVSExec().pgm("").parm("")
+2. DD
+   new DDStatement().name("").dsn("").options("")
+3. //SYSTERM  DD DUMMY
+   new DDStatement().name("SYSTERM").options("DUMMY")
+
+
+
+
+
+
+
+
+
+
