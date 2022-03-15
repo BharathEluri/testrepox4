@@ -1,6 +1,11 @@
 //********************************************************************
+//* -> PRE-COMPILE DB2
+//*    EXEC SI : 1) RC OK
+//*              2) PRE-COMPILATION CICS/DB2 NON DYNAMIQUE
+//*              3) DB2
 //*
-//*-------------------------------------------------------------------
+//* > umsetzen DB2 PreCompiler
+//* > hier wird die Source verändert und ein DBRM erzeugt (DataBaseRequestModule)
 //CTLEXEC  IF RC = 00 THEN
 //IF_TST1  IF &COB3DYN = N    THEN
 //*        -> PRECOMPILE DYNAMIQUE  = NON                            .
